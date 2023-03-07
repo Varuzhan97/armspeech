@@ -11,7 +11,7 @@ setup(
     version="13.0.4",
     author="Varuzhan Baghdasaryan",
     author_email="varuzh2014@gmail.com",
-    description="ArmSpeech is an offline Armenian speech recognition library (speech-to-text) and CLI tool based on Coqui STT (🐸STT) and trained on the ArmSpeech.",
+    description="ArmSpeech is an offline Armenian speech recognition library (speech-to-text) and CLI tool based on Coqui STT (🐸STT) and trained on the ArmSpeech dataset.",
     long_description=long_description,
     long_description_content_type="text/markdown",
     keywords='speech recognition, speech-to-text, Armenian language',
