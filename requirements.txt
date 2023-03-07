@@ -1,0 +1,5 @@
+numpy
+stt-tflite
+pyaudio
+webrtcvad
+halo
