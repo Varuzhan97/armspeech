@@ -28,7 +28,7 @@ In both cases audio has the same parameters:
 | `from_wav(self, wav_path: str, get_metadata: bool = False) -> str`   | Transcribe wav audio file. The function takes two parameters: the absolute path of the audio file (`wav_path`) and a boolean parameter (`get_metadata`) for enabling metadata generation. `get_metadata` parameter is optional and the default value is false. The function returns either the transcript or a tuple of metadata, which includes the transcript too.     |
 | `from_mic(self, vad_aggresivness: int = 3, spinner: bool = False, wav_save_path: str = None, get_metadata = False)`   | Transcribe audio stream taken from microphone. The generator function takes four parameters: an integer number (`vad_aggresivness`) in a range of [0, 3] for voice activity detection aggressiveness, a boolean for showing spinner (`spinner`) in the console while detected voice activity, an absolute path (`wav_save_path`) to save transcribed speeches, and a boolean parameter (`get_metadata`) for enabling metadata generation. All the parameters are optional (value of 3 for `vad_aggresivness`, false for `get_metadata` and `spinner`, and empty for `wav_save_path`. The function returns either the transcript or a tuple of metadata, which includes the transcript too.     |
 
-The `from_mic()` generator function uses voice activity detection technology to detect speech by simply distinguishing between silence and speech. This is done by using Python free “webrtcvad” module, which is a python interface to the WebRTC Voice Activity Detector (VAD) developed by Google. The application determines voice activity by a ratio of not null and null frames in 300 milliseconds. The portion of not null frames in given milliseconds must be equal to or greater than 75%.
+The `from_mic()` generator function uses voice activity detection technology to detect speech by simply distinguishing between silence and speech. This is done by using Python free “webrtcvad” module, which is a Python interface to the WebRTC Voice Activity Detector (VAD) developed by Google. The application determines voice activity by a ratio of not null and null frames in 300 milliseconds. The portion of not null frames in given milliseconds must be equal to or greater than 75%.
 
 In `from_mic()` and `from_wav()` functions setting the `get_metada` parameter to true, returns metadata of the audio file or stream, which includes the transcript, confidence score, and position of the token in seconds. An example of returned metadata is below:
 
@@ -53,7 +53,7 @@ pip install armspeech
 from armspeech import ArmSpeech_STT
 
 #Create object
-armspeech_stt = ArmSpeech()
+armspeech_stt = ArmSpeech_STT()
 
 #Transcribe wav audio file
 result = armspeech_stt.from_wav(wav_path = 'path/to/wav/audio', get_metadata = True)
@@ -63,6 +63,7 @@ print(result)
 for result in armspeech_stt.from_mic (vad_aggresivness = 2, spinner = True, wav_save_path = 'path/to/transcribed/speeches', get_metadata = False):
     print(result)
 ```
+
 ### CLI
 
 ```
