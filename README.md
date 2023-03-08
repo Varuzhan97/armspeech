@@ -1,6 +1,6 @@
-# armspeech: Armenian Speech Recogition Library.
+# ArmSpeech: Armenian Speech Recogition Library.
 
-armspeech is an offline Armenian speech recognition library (speech-to-text) and CLI tool based on [Coqui STT (🐸STT)](https://stt.readthedocs.io/en/latest/) and trained on the [ArmSpeech](https://www.ijscia.com/full-text-volume-3-issue-3-may-jun-2022-454-459/) dataset. [Coqui STT (🐸STT)](https://stt.readthedocs.io/en/latest/) is an open-source implementation of Baidu’s Deep Speech deep neural network. The engine is based on a recurrent neural network (RNN) and consists of 5 layers of hidden units.
+ArmSpeech is an offline Armenian speech recognition library (speech-to-text) and CLI tool based on [Coqui STT (🐸STT)](https://stt.readthedocs.io/en/latest/) and trained on the [ArmSpeech](https://www.ijscia.com/full-text-volume-3-issue-3-may-jun-2022-454-459/) dataset. [Coqui STT (🐸STT)](https://stt.readthedocs.io/en/latest/) is an open-source implementation of Baidu’s Deep Speech deep neural network. The engine is based on a recurrent neural network (RNN) and consists of 5 layers of hidden units.
 
 The acoustic model and language model work together to produce better accuracy of prediction. The acoustic model uses a sequence-to-sequence algorithm, to learn which acoustic signals correspond to which letters in the language alphabet (outputs probabilities for each class of character, not at the word level). To distinguish homonyms (words that sound the same but are spelled differently), a language model comes to the rescue, which predicts which words will follow each other in a sequence (n-gram modeling).
 
@@ -10,7 +10,7 @@ If want to help me to increase the accuracy of transcriptions, then <a href="htt
 
 ## API
 
-armspeech can be used both as a Python module and a CLI tool. The library can be used in two ways:
+ArmSpeech can be used both as a Python module and a CLI tool. The library can be used in two ways:
 * transcribe wav audio file,
 * transcribe audio stream from microphone.
 
