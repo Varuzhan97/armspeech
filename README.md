@@ -10,7 +10,7 @@ If want to help me to increase the accuracy of transcriptions, then <a href="htt
 
 ## API
 
-ArmSpeech can be used both as a Python module and a CLI tool. The library can be used in two ways:
+armspeech can be used both as a Python module and a CLI tool. The library can be used in two ways:
 * transcribe wav audio file,
 * transcribe audio stream from microphone.
 
