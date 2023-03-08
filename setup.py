@@ -8,7 +8,7 @@ with open('requirements.txt') as f:
 
 setup(
     name="armspeech",
-    version="0.1.0",
+    version="0.1.2",
     author="Varuzhan Baghdasaryan",
     author_email="varuzh2014@gmail.com",
     description="ArmSpeech is an offline Armenian speech recognition library (speech-to-text) and CLI tool based on Coqui STT (🐸STT) and trained on the ArmSpeech dataset.",
