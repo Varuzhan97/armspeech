@@ -41,7 +41,7 @@ CLI API took 7 optional parameters: `wav_path`, `beam_width`, `alpha_beta`, `get
 ## Install
 
 ```
-pip install ArmSpeech
+pip install armspeech
 ```
 
 ## Usage examples
