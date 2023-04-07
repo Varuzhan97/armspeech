@@ -1,1 +1,2 @@
-include requirements.txt
+include requirements_linux.txt
+include requirements_windows.txt
