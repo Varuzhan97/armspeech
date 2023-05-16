@@ -1,4 +1,4 @@
-# ArmSpeech: Armenian Speech Recogition Library.
+# ArmSpeech: Armenian Speech Recognition Library.
 
 ArmSpeech is an offline Armenian speech recognition library (speech-to-text) and CLI tool based on [Coqui STT (🐸STT)](https://stt.readthedocs.io/en/latest/) and trained on the [ArmSpeech](https://www.ijscia.com/full-text-volume-3-issue-3-may-jun-2022-454-459/) dataset. [Coqui STT (🐸STT)](https://stt.readthedocs.io/en/latest/) is an open-source implementation of Baidu’s Deep Speech deep neural network. The engine is based on a recurrent neural network (RNN) and consists of 5 layers of hidden units.
 
